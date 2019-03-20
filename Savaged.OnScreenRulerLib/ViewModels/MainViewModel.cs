@@ -12,6 +12,8 @@ namespace Savaged.OnScreenRulerLib.ViewModels
         private const string LengthKey = "Length";
         private const string ColourKey = "Colour";
 
+        private double _length;
+
         public MainViewModel()
         {
             ChangeColourCmd = new RelayCommand<string>(OnChangeColour);
@@ -27,6 +29,13 @@ namespace Savaged.OnScreenRulerLib.ViewModels
         {
             var setting = new KeyValuePair<string, object>(LengthKey, length);
             SettingsService.Current.SetValue(setting);
+            Length = length;
+        }
+
+        public double Length
+        {
+            get => _length;
+            set => Set(ref _length, value);
         }
 
         public ICommand ChangeColourCmd { get; }

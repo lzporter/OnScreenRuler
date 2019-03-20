@@ -7,7 +7,7 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Savaged.OnSreenRuler")]
+[assembly: AssemblyTitle("OnScreenRuler")]
 [assembly: AssemblyDescription("An on screen ruler (Savaged saw people pointing at the screen to keep their eye on a value while doing something else with their mouse pointer)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Savaged")]

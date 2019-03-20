@@ -1,10 +1,11 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using System;
 using System.Windows.Input;
 
 namespace Savaged.OnScreenRulerLib.ViewModels
 {
-    public abstract class DialogViewModel
+    public abstract class DialogViewModel : ViewModelBase
     {
         public DialogViewModel()
         {

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savaged.OnSreenRuler", "Savaged.OnSreenRuler\Savaged.OnSreenRuler.csproj", "{5627905E-F65F-41C6-9362-C617048F86BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Savaged.OnScreenRulerLib", "Savaged.OnScreenRulerLib\Savaged.OnScreenRulerLib.csproj", "{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savaged.OnScreenRulerLib", "Savaged.OnScreenRulerLib\Savaged.OnScreenRulerLib.csproj", "{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savaged.OnScreenRuler", "Savaged.OnScreenRuler\Savaged.OnScreenRuler.csproj", "{5627905E-F65F-41C6-9362-C617048F86BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5627905E-F65F-41C6-9362-C617048F86BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5627905E-F65F-41C6-9362-C617048F86BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5627905E-F65F-41C6-9362-C617048F86BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5627905E-F65F-41C6-9362-C617048F86BC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2604BFE5-758D-40C5-84B1-D4EC2019DEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5627905E-F65F-41C6-9362-C617048F86BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5627905E-F65F-41C6-9362-C617048F86BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5627905E-F65F-41C6-9362-C617048F86BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5627905E-F65F-41C6-9362-C617048F86BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

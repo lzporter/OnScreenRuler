@@ -3,6 +3,7 @@ using Savaged.OnScreenRulerLib.ViewModels;
 using System;
 using System.ComponentModel;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace Savaged.OnSreenRuler
@@ -61,6 +62,11 @@ namespace Savaged.OnSreenRuler
                 mainViewModel.ColourChanged -= OnColourChanged;
                 mainViewModel.Close = null;
             }
+        }
+
+        private void OnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // TODO allow drag window
         }
     }
 }
