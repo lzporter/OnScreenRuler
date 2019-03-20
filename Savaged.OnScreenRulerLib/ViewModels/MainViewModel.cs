@@ -9,10 +9,7 @@ namespace Savaged.OnScreenRulerLib.ViewModels
 {
     public class MainViewModel : DialogViewModel
     {
-        private const string LengthKey = "Length";
         private const string ColourKey = "Colour";
-
-        private double _length;
 
         public MainViewModel()
         {
@@ -22,20 +19,6 @@ namespace Savaged.OnScreenRulerLib.ViewModels
         public void Load()
         {
             LoadColour();
-            LoadLength();
-        }
-
-        public void ChangeLength(double length)
-        {
-            var setting = new KeyValuePair<string, object>(LengthKey, (int)length);
-            SettingsService.Current.SetValue(setting);
-            Length = length;
-        }
-
-        public double Length
-        {
-            get => _length;
-            set => Set(ref _length, value);
         }
 
         public ICommand ChangeColourCmd { get; }
@@ -55,15 +38,6 @@ namespace Savaged.OnScreenRulerLib.ViewModels
             if (value != null && value is string colour)
             {
                 OnChangeColour(colour);
-            }
-        }
-
-        private void LoadLength()
-        {
-            var value = SettingsService.Current.GetValue(LengthKey);
-            if (value != null && value is double length)
-            {
-                ChangeLength(length);
             }
         }
 

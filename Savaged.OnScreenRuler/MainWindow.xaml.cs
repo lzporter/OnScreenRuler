@@ -32,29 +32,6 @@ namespace Savaged.OnSreenRuler
             ContentGrid.Background = brush;
         }
 
-        private void OnSizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            if (DataContext is MainViewModel mainViewModel
-                && e.WidthChanged)
-            {
-                double delta;
-                if (e.PreviousSize.Width < e.NewSize.Width)
-                {
-                    delta = e.NewSize.Width - e.PreviousSize.Width;
-                }
-                else
-                {
-                    delta = e.PreviousSize.Width - e.NewSize.Width;
-                }
-                if (delta > 100)
-                {
-                    var size = e.NewSize;
-                    var length = size.Width;
-                    mainViewModel.ChangeLength(length);
-                }
-            }
-        }
-
         private void OnClosing(object sender, CancelEventArgs e)
         {
             if (DataContext is MainViewModel mainViewModel)

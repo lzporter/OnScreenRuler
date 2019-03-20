@@ -10,11 +10,10 @@
         Topmost="True"
         ShowInTaskbar="False"
         Title="On Screen Ruler" 
-        MinHeight="30" MaxHeight="40" 
-        Width="{Binding DataContext.Length, Mode=OneWay}"
+        MinHeight="30" MaxHeight="30" 
+        Width="300"
         SourceInitialized="OnSourceInitialized"
         MouseLeftButtonDown="OnMouseLeftButtonDown"
-        SizeChanged="OnSizeChanged"
         Closing="OnClosing">
     <Window.InputBindings>
         <KeyBinding Key="Esc" Command="{Binding CloseCmd}"/>
@@ -48,5 +47,5 @@
                       InputGestureText="Esc"/>
         </ContextMenu>
     </Window.ContextMenu>
-    <Grid Name="ContentGrid"/>
+    <Grid Name="ContentGrid" Margin="0"/>
 </Window>
