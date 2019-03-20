@@ -27,7 +27,7 @@ namespace Savaged.OnScreenRulerLib.ViewModels
 
         public void ChangeLength(double length)
         {
-            var setting = new KeyValuePair<string, object>(LengthKey, length);
+            var setting = new KeyValuePair<string, object>(LengthKey, (int)length);
             SettingsService.Current.SetValue(setting);
             Length = length;
         }
@@ -65,6 +65,12 @@ namespace Savaged.OnScreenRulerLib.ViewModels
             {
                 ChangeLength(length);
             }
+        }
+
+        protected override void OnClose()
+        {
+            SettingsService.Current.Persist();
+            base.OnClose();
         }
     }
 }

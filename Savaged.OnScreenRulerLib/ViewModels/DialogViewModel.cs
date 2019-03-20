@@ -16,7 +16,7 @@ namespace Savaged.OnScreenRulerLib.ViewModels
 
         public Action Close { get; set; }
 
-        protected void OnClose()
+        protected virtual void OnClose()
         {
             Close?.Invoke();
         }

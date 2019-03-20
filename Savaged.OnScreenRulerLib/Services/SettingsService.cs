@@ -49,7 +49,18 @@ namespace Savaged.OnScreenRulerLib.Services
             {
                 _settings.Add(setting);
             }
-            Persist();
+        }
+
+        public void Persist()
+        {
+            var json = JsonConvert.SerializeObject(_settings);
+
+            var fileInfo = new FileInfo(_settingsLocation);
+            if (fileInfo.Exists)
+            {
+                File.Delete(_settingsLocation);
+            }
+            File.WriteAllText(_settingsLocation, json);
         }
 
         private void Load()
@@ -65,18 +76,6 @@ namespace Savaged.OnScreenRulerLib.Services
             {
                 _settings = new Dictionary<string, object>();
             }
-        }
-
-        private void Persist()
-        {
-            var json = JsonConvert.SerializeObject(_settings);
-
-            var fileInfo = new FileInfo(_settingsLocation);
-            if (fileInfo.Exists)
-            {
-                File.Delete(_settingsLocation);
-            }
-            File.WriteAllText(_settingsLocation, json);
         }
     }
 }

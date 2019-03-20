@@ -64,9 +64,9 @@ namespace Savaged.OnSreenRuler
             }
         }
 
-        private void OnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // TODO allow drag window
+            DragMove();
         }
     }
 }
