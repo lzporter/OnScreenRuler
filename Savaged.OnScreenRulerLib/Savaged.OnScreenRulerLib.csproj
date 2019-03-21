@@ -3,11 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>Library for an on screen ruler (Savaged saw people pointing at the screen to keep their eye on a value while doing something else with their mouse pointer)</Description>
+    <Copyright>Copyright ©  2019</Copyright>
+    <PackageProjectUrl>https://github.com/savaged/OnScreenRuler</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/savaged/OnScreenRuler/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
