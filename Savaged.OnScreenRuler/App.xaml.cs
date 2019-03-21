@@ -1,5 +1,6 @@
-﻿using Savaged.OnScreenRulerLib.ViewModels;
-using System.Windows;
+﻿using System.Windows;
+
+using Savaged.OnScreenRulerLib.ViewModels;
 
 namespace Savaged.OnSreenRuler
 {

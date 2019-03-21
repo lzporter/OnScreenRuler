@@ -1,7 +1,8 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using System;
+﻿using System;
 using System.Windows.Input;
+
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace Savaged.OnScreenRulerLib.ViewModels
 {

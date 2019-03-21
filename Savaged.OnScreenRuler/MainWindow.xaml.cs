@@ -1,7 +1,8 @@
-﻿using Savaged.OnScreenRulerLib.ViewModels;
-using System;
+﻿using System;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+
+using Savaged.OnScreenRulerLib.ViewModels;
 
 namespace Savaged.OnSreenRuler
 {
