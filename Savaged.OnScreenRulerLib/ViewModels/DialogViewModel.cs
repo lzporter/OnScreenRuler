@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Windows.Input;
 
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-
 namespace Savaged.OnScreenRulerLib.ViewModels
 {
-    public abstract class DialogViewModel : ViewModelBase
+    public abstract class DialogViewModel
     {
         public DialogViewModel()
         {
-            CloseCmd = new RelayCommand(OnClose);
+            CloseCmd = new RelayCommand(OnClose, true);
         }
 
         public ICommand CloseCmd { get; }

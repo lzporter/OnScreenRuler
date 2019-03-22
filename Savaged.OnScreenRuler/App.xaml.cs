@@ -10,10 +10,9 @@ namespace Savaged.OnSreenRuler
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            var mainViewModel = new MainViewModel();
             _main = new MainWindow
             {
-                DataContext = mainViewModel
+                DataContext = ViewModelLocator.Current.MainViewModel
             };            
             _main.Show();
         }

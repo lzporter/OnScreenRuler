@@ -1,6 +1,4 @@
-﻿using GalaSoft.MvvmLight.Ioc;
-
-namespace Savaged.OnScreenRulerLib.ViewModels
+﻿namespace Savaged.OnScreenRulerLib.ViewModels
 {
     public class ViewModelLocator
     {
@@ -11,10 +9,9 @@ namespace Savaged.OnScreenRulerLib.ViewModels
 
         private ViewModelLocator()
         {
-            SimpleIoc.Default.Register<MainViewModel>();
+            MainViewModel = new MainViewModel();
         }
 
-        public MainViewModel MainViewModel =>
-            SimpleIoc.Default.GetInstance<MainViewModel>();
+        public MainViewModel MainViewModel { get; }
     }
 }
