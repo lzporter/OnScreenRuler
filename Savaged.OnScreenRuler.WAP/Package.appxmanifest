@@ -19,6 +19,7 @@
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" Square310x310Logo="Images\LargeTile.png" Square71x71Logo="Images\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
+        <uap:LockScreen BadgeLogo="Images\BadgeLogo.png" Notification="badge"/>
       </uap:VisualElements>
     </Application>
   </Applications>
